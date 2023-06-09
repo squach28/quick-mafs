@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <div className={styles.container}>
         <Link href="/" className={styles.header}><h1>Quick Mafs</h1></Link>
-        <button className={styles.button}>Login</button>
+        <Link href="/login" className={styles.button}>Login</Link>
     </div>
   )
 }
