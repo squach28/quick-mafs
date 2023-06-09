@@ -5,8 +5,8 @@ import Link from 'next/link'
 const Navbar = () => {
   return (
     <div className={styles.container}>
-        <Link href="/"><h1>Quick Mafs</h1></Link>
-        <button>Login</button>
+        <Link href="/" className={styles.header}><h1>Quick Mafs</h1></Link>
+        <button className={styles.button}>Login</button>
     </div>
   )
 }

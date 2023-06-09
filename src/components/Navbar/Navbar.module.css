@@ -1,5 +1,20 @@
 .container {
     display: flex;
     justify-content: space-between;
-    margin: 0 1.5em;
+    margin: 2em 1.5em;
+    align-items: center;
+}
+
+.header {
+    text-decoration: none;
+    color: #63585E;
+}
+
+.button {
+    background-color: #C4E7D4;
+    color: #63585E;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
 }
