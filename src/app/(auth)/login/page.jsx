@@ -4,6 +4,11 @@ import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
 
+export const metadata = {
+    title: "Login to Quck Mafs",
+    description: "Login to Quick Mafs using email or social login"
+}
+
 const Login = () => {
 
     const handleSubmit = (e) => {
