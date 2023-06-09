@@ -1,7 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     gap: 1em;
 }
@@ -27,4 +26,27 @@
     border: none;
     border-radius: 10px;
     font-weight: bold;
+}
+
+
+.line {
+    color: black;
+    width: auto;
+    margin: 0 0.5em;
+    width: 85%;
+}
+
+.socialLoginContainer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.socialLoginButton {
+    background-color: #C4E7D4;
+    color: #63585E;
+    padding: 1em 1.5em;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    margin: 1em;
 }

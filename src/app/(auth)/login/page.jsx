@@ -20,9 +20,14 @@ const Login = () => {
         </form>
         <Link href="/register">Haven&apos;t mathed with us yet? Register here</Link>
 
-        <button className={styles.loginButton}>Google Login</button>
-        <button className={styles.loginButton}>Apple Login</button>
-        <button className={styles.loginButton}>Twitter Login</button>
+            <hr className={styles.line}/>
+            <h3>Or login with</h3>
+
+        <div className={styles.socialLoginContainer}>
+            <button className={styles.socialLoginButton}>Google</button>
+            <button className={styles.socialLoginButton}>Apple</button>
+            <button className={styles.socialLoginButton}>Twitter</button>
+        </div>
 
     </div>
   )
