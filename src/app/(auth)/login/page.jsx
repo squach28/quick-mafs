@@ -3,13 +3,18 @@
 import React from 'react'
 import styles from './page.module.css'
 import Link from 'next/link'
-
-export const metadata = {
-    title: "Login to Quck Mafs",
-    description: "Login to Quick Mafs using email or social login"
-}
+import { signIn, useSession } from 'next-auth/react'
+import { useRouter } from 'next/navigation'
 
 const Login = () => {
+
+    const session = useSession()
+    const router = useRouter()
+
+    if(session.status === 'loading') {
+        return <p>Loading...</p>
+    }
+ 
 
     const handleSubmit = (e) => {
         e.preventDefault()
@@ -29,7 +34,7 @@ const Login = () => {
             <h3>Or login with</h3>
 
         <div className={styles.socialLoginContainer}>
-            <button className={styles.socialLoginButton}>Google</button>
+            <button className={styles.socialLoginButton} onClick={() => { signIn("google")}}>Google</button>
             <button className={styles.socialLoginButton}>Apple</button>
             <button className={styles.socialLoginButton}>Twitter</button>
         </div>
